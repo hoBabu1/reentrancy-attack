@@ -48,6 +48,7 @@ contract CounterTest is Test {
         console.log("attacker contract", address(attacker).balance);
         console.log("malicious contract ",address(malicious).balance);
         console.log("withdraw", attacker.withdraw());
+         console.log("count ", malicious.count());
     //    assert(address(attacker).balance == 9 ether);
     }
 
